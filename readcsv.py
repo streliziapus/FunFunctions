@@ -38,10 +38,10 @@ def get_matrix(file,search):
     return data
 
 # simple write to csvfile function
-# filename(str) is the name of the file to be written to (will be overwritten) default is 'dailyboardchange.csv'
+# filename(str) is the name of the file to be written to (will be overwritten) default is 'temp.csv'
 # head(list) the words to be written to the top
 # data(matrix) the data to write to the file
-def write_to_csvfile(head, data, filename = 'dailyboardchange.csv'):
+def write_to_csvfile(head, data, filename = 'temp.csv'):
     with open(filename, 'w', newline='') as daily:
         writer = csv.writer(daily, delimiter=',')
         writer.writerow(head) #write header (fieldnames)
